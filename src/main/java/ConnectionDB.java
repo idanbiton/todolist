@@ -173,7 +173,6 @@ public class ConnectionDB {
         try {
             //connection = DriverManager.getConnection(URL);
             connection.setAutoCommit(false);
-            System.out.println("Opened database successfully");
             stmt = connection.createStatement();
             ResultSet rs = stmt.executeQuery(ID);
             this.index = rs.getInt(1) + 1;

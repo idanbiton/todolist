@@ -54,6 +54,7 @@ jsonArr = JSON.parse(jsonArr);
     }
 }
 
+// Gets the index of a record from DB
 function getIndex(){
     var xhr = new XMLHttpRequest();
     xhr.open("GET", '/getIndex', true);
@@ -121,8 +122,8 @@ function newElement() {
     return;
   }
 
-    new listItem(inputValue, index, false).getHtml();
-    index += 1;
+  new listItem(inputValue, index, false).getHtml();
+  index += 1;
   var request = new XMLHttpRequest();
   request.open('POST', '/addElement', true);
   request.setRequestHeader("Content-type", "application/json");
