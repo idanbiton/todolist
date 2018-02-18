@@ -181,7 +181,7 @@ public class ConnectionDB {
             //connection.close();
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-            return this.index + 1;
+            return -1;
         }
 
         return this.index;
