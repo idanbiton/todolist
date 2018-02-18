@@ -54,6 +54,7 @@ jsonArr = JSON.parse(jsonArr);
     }
 }
 
+// Gets the index of a record from DB
 function getIndex(){
     var xhr = new XMLHttpRequest();
     xhr.open("GET", '/getIndex', true);

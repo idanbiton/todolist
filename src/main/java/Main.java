@@ -11,7 +11,6 @@ public class Main {
 
     ConnectionDB db = new ConnectionDB();
 
-
     public static void main(String[] args) {
         Main main = new Main();
         main.run();
@@ -39,7 +38,6 @@ public class Main {
             updateTaskName(req.body());
             return "";
         });
-
     }
 
     private int getIndex() {
